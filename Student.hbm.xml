@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+       "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+       "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+       
+       <hibernate-mapping>
+       <class name="StudentPOJO" table="STUDENT">
+       <id name="rollNo" column="Roll_No" type="integer">
+       <generator class="assigned"></generator>
+       </id>
+       <property name="sclass" column="Class" type="string"></property>
+       <property name="name" column="NAME" type="string"></property>
+       <property name="sub" column="SUBJECT" type="string"></property>
+       <property name="marks" column="MARKS" type="integer"></property>
+       </class>
+       </hibernate-mapping>
